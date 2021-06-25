@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./partials/logout') %> <br> <br> <br>
+    <button onclick="document.location='/users/addProduct'">Add Product</button>
+    <table border="">
+        <tr>
+            <th>Product Name</th>
+            <th>Brand</th>
+            <th>Photo</th>
+            <th>Retail Price</th>
+            <th>Rating</th>
+            <th>Review</th>
+        </tr>
+        <% data.forEach(e => { %>
+        <tr>
+            <td><img src="<%= e.photo %>" alt="<%= e.brand_product %>" height="70" width=""/></td>
+            <td><%= e.name_product %></td>
+            <td><%= e.brand_product %></td>
+            <td><%= e.formatRupiah(e.retail_price) %></td>
+            <td><%= averageRating(e.Reviews) %></td>
+            <td><a href="/users/addReview/<%=e.id%>">Review | </a><a href="/users/seeReviews">See all reviews</a></td>
+        </tr>
+        <% }) %>
+    </table>
+</body>
+</html>

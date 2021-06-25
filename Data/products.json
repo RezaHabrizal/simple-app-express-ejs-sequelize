@@ -1,0 +1,27 @@
+[
+    {
+        "merk": "wadah",
+        "category": "pembersih bulu hidung",
+        "harga": "10000"
+    },
+    {
+        "merk": "nipea",
+        "category": "pelurus bulu mata",
+        "harga": "11000"
+    },
+    {
+        "merk": "biora",
+        "category": "pelicin kulit wajah",
+        "harga": "12000"
+    },
+    {
+        "merk": "yuu",
+        "category": "pembersih bulu hidung",
+        "harga": "13000"
+    },
+    {
+        "merk": "tevlon",
+        "category": "pelurus bulu mata",
+        "harga": "15000"
+    }
+]
